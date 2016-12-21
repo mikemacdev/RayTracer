@@ -1,0 +1,24 @@
+eye { 4 3 15 }
+viewdir { -0.3 -0.15 -1 }
+updir { 0 1 0 }
+viewdist { 5 }
+fovh { 15 }
+fovv { 20 }
+pixwidth { 600 }
+
+light { 0 5 10 1 }
+
+# an upright green transparent square
+# transmissivity = 0.5
+# material's index of refraction = 1.5
+# index of refraction of surround prior to ray/surface intersection = 1.0
+# (physically this setup doesn't make sense,
+# but it allows a simple example for debugging)
+material { < 0.0 1.0 0.0 > < 1.0 1.0 1.0 > < 0.2 0.6 0.0 15 > 0.5 < 1.5 1.0 > }
+triangle { < -0.5 -0.5 0.5 > < 0.5 -0.5 0.5 > < -0.5 0.5 0.5 > }
+triangle { < -0.5 0.5 0.5 > < 0.5 -0.5 0.5 > < 0.5 0.5 0.5 > }
+
+# a large, faintly reflective, opaque grey ground plane
+material { < 0.6 0.6 0.6 > < 1.0 1.0 1.0 > < 0.1 0.6 0.1 15 > 0.0 < 1.0 1.0 > }
+triangle { < 100 -0.5 -100 > < -100 -0.5 -100 > < -100 -0.5 100 > }
+triangle { < 100 -0.5 100 > < 100 -0.5 -100 > < -100 -0.5 100 > }
