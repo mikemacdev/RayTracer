@@ -1,4 +1,6 @@
 # RayTracer
+#### Author: Michael MacFarlane
+
 A ray tracing engine that renders scenes comprised of 3D objects and lights.
 
 RayTracer is run via comand line with a mandatory scene file parameter. The maximum recursion depth of internal reflections in spheres 10.
