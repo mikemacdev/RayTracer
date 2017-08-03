@@ -1,5 +1,4 @@
 # RayTracer
-#### Author: Michael MacFarlane
 
 A ray tracing engine that renders scenes comprised of 3D objects and lights.
 
@@ -9,29 +8,28 @@ This project was originally compiled using g++ and on linux. It was later conver
 
 GLUT (or freeglut) is required to build and run RayTracer.
 
-### Building an x86 executible using 64-bit Windows
-Copy glut32.dll to "C:\Windows\SysWOW64".
+### Install GLUT
 
-Copy glut.h to "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\gl".
+Example locations for Visual Studio 2017
 
-Copy glut32.lib to "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib".
+File | Location
+--- | ---
+glut.h | C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include\gl
+glut32.lib | C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\x64
+glut32.dll | C:\Windows\SysWOW64
 
-### To run the program type:
-.\RayTracer.exe <scene file>
+### Run
 
-### Example command:
-.\Release\RayTracer.exe ".\Scenes\sceneA.txt"
+RayTracer.exe <scene file>
 
-### Sample scene descriptions:
-Scenes\sceneA.txt
+Example command
 
-Scenes\sceneB.txt
+RayTracer.exe .\Scenes\sceneA.txt
 
-Scenes\sceneC.txt
+### Input
 
-### Sample scene output:
-sceneA.png
+Scene file examples are in the Scene directory.
 
-sceneB.png
+### Output
 
-sceneC.png
+Scene example output images are in the Screenshots directory.
