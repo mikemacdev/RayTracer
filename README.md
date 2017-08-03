@@ -10,6 +10,8 @@ GLUT (or freeglut) is required to build and run RayTracer.
 
 ### Install GLUT
 
+[OpenGL Utility Toolkit](https://www.opengl.org/resources/libraries/glut/)
+
 Example locations for Visual Studio 2017
 
 File | Location
